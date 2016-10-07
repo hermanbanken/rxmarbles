@@ -146,7 +146,7 @@ var BodyDOMSource = (function () {
 }());
 exports.BodyDOMSource = BodyDOMSource;
 
-},{"./fromEvent":10,"@cycle/xstream-adapter":25,"xstream":128}],3:[function(require,module,exports){
+},{"./fromEvent":10,"@cycle/xstream-adapter":25,"xstream":137}],3:[function(require,module,exports){
 "use strict";
 var xstream_1 = require('xstream');
 var xstream_adapter_1 = require('@cycle/xstream-adapter');
@@ -183,7 +183,7 @@ var DocumentDOMSource = (function () {
 }());
 exports.DocumentDOMSource = DocumentDOMSource;
 
-},{"./fromEvent":10,"@cycle/xstream-adapter":25,"xstream":128}],4:[function(require,module,exports){
+},{"./fromEvent":10,"@cycle/xstream-adapter":25,"xstream":137}],4:[function(require,module,exports){
 "use strict";
 var ScopeChecker_1 = require('./ScopeChecker');
 var utils_1 = require('./utils');
@@ -389,7 +389,7 @@ var HTMLSource = (function () {
 }());
 exports.HTMLSource = HTMLSource;
 
-},{"@cycle/xstream-adapter":25,"xstream":128}],7:[function(require,module,exports){
+},{"@cycle/xstream-adapter":25,"xstream":137}],7:[function(require,module,exports){
 "use strict";
 var xstream_adapter_1 = require('@cycle/xstream-adapter');
 var DocumentDOMSource_1 = require('./DocumentDOMSource');
@@ -580,7 +580,7 @@ var MainDOMSource = (function () {
 }());
 exports.MainDOMSource = MainDOMSource;
 
-},{"./BodyDOMSource":2,"./DocumentDOMSource":3,"./ElementFinder":4,"./EventDelegator":5,"./fromEvent":10,"./isolate":14,"./utils":21,"@cycle/xstream-adapter":25,"matches-selector":100,"xstream":128}],8:[function(require,module,exports){
+},{"./BodyDOMSource":2,"./DocumentDOMSource":3,"./ElementFinder":4,"./EventDelegator":5,"./fromEvent":10,"./isolate":14,"./utils":21,"@cycle/xstream-adapter":25,"matches-selector":100,"xstream":137}],8:[function(require,module,exports){
 "use strict";
 var ScopeChecker = (function () {
     function ScopeChecker(scope, isolateModule) {
@@ -636,7 +636,7 @@ var VNodeWrapper = (function () {
 }());
 exports.VNodeWrapper = VNodeWrapper;
 
-},{"./hyperscript":12,"snabbdom-selector/lib/classNameFromVNode":103,"snabbdom-selector/lib/selectorParser":104}],10:[function(require,module,exports){
+},{"./hyperscript":12,"snabbdom-selector/lib/classNameFromVNode":112,"snabbdom-selector/lib/selectorParser":113}],10:[function(require,module,exports){
 "use strict";
 var xstream_1 = require('xstream');
 function fromEvent(element, eventName, useCapture) {
@@ -655,7 +655,7 @@ function fromEvent(element, eventName, useCapture) {
 }
 exports.fromEvent = fromEvent;
 
-},{"xstream":128}],11:[function(require,module,exports){
+},{"xstream":137}],11:[function(require,module,exports){
 "use strict";
 var hyperscript_1 = require('./hyperscript');
 function isValidString(param) {
@@ -793,7 +793,7 @@ function h(sel, b, c) {
 exports.h = h;
 ;
 
-},{"snabbdom/is":114,"snabbdom/vnode":123}],13:[function(require,module,exports){
+},{"snabbdom/is":123,"snabbdom/vnode":132}],13:[function(require,module,exports){
 "use strict";
 var thunk = require('snabbdom/thunk');
 exports.thunk = thunk;
@@ -1078,7 +1078,7 @@ exports.u = hyperscript_helpers_1.default.u;
 exports.ul = hyperscript_helpers_1.default.ul;
 exports.video = hyperscript_helpers_1.default.video;
 
-},{"./hyperscript":12,"./hyperscript-helpers":11,"./makeDOMDriver":16,"./makeHTMLDriver":17,"./mockDOMSource":18,"snabbdom/thunk":122}],14:[function(require,module,exports){
+},{"./hyperscript":12,"./hyperscript-helpers":11,"./makeDOMDriver":16,"./makeHTMLDriver":17,"./mockDOMSource":18,"snabbdom/thunk":131}],14:[function(require,module,exports){
 "use strict";
 var utils_1 = require('./utils');
 function isolateSource(source, scope) {
@@ -1268,7 +1268,7 @@ function makeDOMDriver(container, options) {
 }
 exports.makeDOMDriver = makeDOMDriver;
 
-},{"./MainDOMSource":7,"./VNodeWrapper":9,"./isolateModule":15,"./modules":19,"./transposition":20,"./utils":21,"@cycle/xstream-adapter":25,"es6-map":68,"snabbdom":121,"xstream":128}],17:[function(require,module,exports){
+},{"./MainDOMSource":7,"./VNodeWrapper":9,"./isolateModule":15,"./modules":19,"./transposition":20,"./utils":21,"@cycle/xstream-adapter":25,"es6-map":68,"snabbdom":130,"xstream":137}],17:[function(require,module,exports){
 "use strict";
 var xstream_adapter_1 = require('@cycle/xstream-adapter');
 var transposition_1 = require('./transposition');
@@ -1299,7 +1299,7 @@ function makeHTMLDriver(effect, options) {
 }
 exports.makeHTMLDriver = makeHTMLDriver;
 
-},{"./HTMLSource":6,"./transposition":20,"@cycle/xstream-adapter":25,"snabbdom-to-html":106}],18:[function(require,module,exports){
+},{"./HTMLSource":6,"./transposition":20,"@cycle/xstream-adapter":25,"snabbdom-to-html":115}],18:[function(require,module,exports){
 "use strict";
 var xstream_adapter_1 = require('@cycle/xstream-adapter');
 var xstream_1 = require('xstream');
@@ -1370,7 +1370,7 @@ function mockDOMSource(streamAdapter, mockConfig) {
 }
 exports.mockDOMSource = mockDOMSource;
 
-},{"@cycle/xstream-adapter":25,"xstream":128}],19:[function(require,module,exports){
+},{"@cycle/xstream-adapter":25,"xstream":137}],19:[function(require,module,exports){
 "use strict";
 var ClassModule = require('snabbdom/modules/class');
 exports.ClassModule = ClassModule;
@@ -1387,7 +1387,7 @@ exports.HeroModule = HeroModule;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = [StyleModule, ClassModule, PropsModule, AttrsModule];
 
-},{"snabbdom/modules/attributes":115,"snabbdom/modules/class":116,"snabbdom/modules/eventlisteners":117,"snabbdom/modules/hero":118,"snabbdom/modules/props":119,"snabbdom/modules/style":120}],20:[function(require,module,exports){
+},{"snabbdom/modules/attributes":124,"snabbdom/modules/class":125,"snabbdom/modules/eventlisteners":126,"snabbdom/modules/hero":127,"snabbdom/modules/props":128,"snabbdom/modules/style":129}],20:[function(require,module,exports){
 "use strict";
 var xstream_adapter_1 = require('@cycle/xstream-adapter');
 var xstream_1 = require('xstream');
@@ -1435,7 +1435,7 @@ function makeTransposeVNode(runStreamAdapter) {
 }
 exports.makeTransposeVNode = makeTransposeVNode;
 
-},{"@cycle/xstream-adapter":25,"xstream":128}],21:[function(require,module,exports){
+},{"@cycle/xstream-adapter":25,"xstream":137}],21:[function(require,module,exports){
 "use strict";
 function isElement(obj) {
     return typeof HTMLElement === "object" ?
@@ -1727,7 +1727,7 @@ var XStreamAdapter = {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = XStreamAdapter;
 
-},{"xstream":128}],26:[function(require,module,exports){
+},{"xstream":137}],26:[function(require,module,exports){
 /*!
  * Cross-Browser Split 1.1.1
  * Copyright 2007-2012 Steven Levithan <stevenlevithan.com>
@@ -22946,6 +22946,303 @@ var ReactiveTest = Rx.ReactiveTest = {
 },{"_process":101}],103:[function(require,module,exports){
 'use strict';
 
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+'use strict';
+
+var _require = require('./ease-common');
+
+var createEasing = _require.createEasing;
+
+var OVERSHOOT = 1.70158;
+
+exports['default'] = {
+  EasingBack: createEasing(function (x) {
+    return x * x * ((OVERSHOOT + 1) * x - OVERSHOOT);
+  })
+};
+module.exports = exports['default'];
+},{"./ease-common":106}],104:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+'use strict';
+
+var _require = require('./ease-common');
+
+var createEasing = _require.createEasing;
+
+var PARAM1 = 7.5625;
+var PARAM2 = 2.75;
+function easeOutFn(x) {
+  var z = x;
+  if (z < 1 / PARAM2) {
+    return PARAM1 * z * z;
+  } else if (z < 2 / PARAM2) {
+    return PARAM1 * (z -= 1.5 / PARAM2) * z + 0.75;
+  } else if (z < 2.5 / PARAM2) {
+    return PARAM1 * (z -= 2.25 / PARAM2) * z + 0.9375;
+  } else {
+    return PARAM1 * (z -= 2.625 / PARAM2) * z + 0.984375;
+  }
+}
+
+exports['default'] = {
+  EasingBounce: createEasing(function (x) {
+    return 1 - easeOutFn(1 - x);
+  })
+};
+module.exports = exports['default'];
+},{"./ease-common":106}],105:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+'use strict';
+
+var _require = require('./ease-common');
+
+var createEasing = _require.createEasing;
+exports['default'] = {
+  EasingCirc: createEasing(function (x) {
+    return -(Math.sqrt(1 - x * x) - 1);
+  })
+};
+module.exports = exports['default'];
+},{"./ease-common":106}],106:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+'use strict';
+
+function interpolate(y, from, to) {
+  return from * (1 - y) + to * y;
+}
+
+function flip(fn) {
+  return function (x) {
+    return 1 - fn(1 - x);
+  };
+}
+
+exports['default'] = {
+  interpolate: interpolate,
+
+  flip: flip,
+
+  createEasing: function createEasing(fn) {
+    var fnFlipped = flip(fn);
+    return {
+      easeIn: function easeIn(x, from, to) {
+        return interpolate(fn(x), from, to);
+      },
+      easeOut: function easeOut(x, from, to) {
+        return interpolate(fnFlipped(x), from, to);
+      },
+      easeInOut: function easeInOut(x, from, to) {
+        var y = x < 0.5 ? fn(2 * x) * 0.5 : 0.5 + fnFlipped(2 * (x - 0.5)) * 0.5;
+        return interpolate(y, from, to);
+      }
+    };
+  }
+};
+module.exports = exports['default'];
+},{}],107:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+'use strict';
+
+var _require = require('./ease-common');
+
+var createEasing = _require.createEasing;
+
+var PERIOD = 0.3;
+var OVERSHOOT = PERIOD / 4;
+var AMPLITUDE = 1;
+function elasticIn(x) {
+  var z = x;
+  if (z <= 0) {
+    return 0;
+  } else if (z >= 1) {
+    return 1;
+  } else {
+    z -= 1;
+    return -(AMPLITUDE * Math.pow(2, 10 * z)) * Math.sin((z - OVERSHOOT) * (2 * Math.PI) / PERIOD);
+  }
+}
+
+exports['default'] = {
+  EasingElastic: createEasing(elasticIn)
+};
+module.exports = exports['default'];
+},{"./ease-common":106}],108:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+'use strict';
+
+var _require = require('./ease-common');
+
+var createEasing = _require.createEasing;
+
+var EXP_WEIGHT = 6;
+var EXP_MAX = Math.exp(EXP_WEIGHT) - 1;
+function expFn(x) {
+  return (Math.exp(x * EXP_WEIGHT) - 1) / EXP_MAX;
+}
+
+var EasingExponential = createEasing(expFn);
+
+exports['default'] = {
+  EasingExponential: EasingExponential
+};
+module.exports = exports['default'];
+},{"./ease-common":106}],109:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+'use strict';
+
+var _require = require('./ease-common');
+
+var createEasing = _require.createEasing;
+
+var EasingPower2 = createEasing(function (x) {
+  return x * x;
+});
+var EasingPower3 = createEasing(function (x) {
+  return x * x * x;
+});
+var EasingPower4 = createEasing(function (x) {
+  var xx = x * x;
+  return xx * xx;
+});
+
+exports['default'] = {
+  EasingPower2: EasingPower2,
+  EasingPower3: EasingPower3,
+  EasingPower4: EasingPower4
+};
+module.exports = exports['default'];
+},{"./ease-common":106}],110:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+'use strict';
+
+var _require = require('./ease-common');
+
+var createEasing = _require.createEasing;
+
+var HALF_PI = Math.PI * 0.5;
+
+exports['default'] = {
+  EasingSine: createEasing(function (x) {
+    return 1 - Math.cos(x * HALF_PI);
+  })
+};
+module.exports = exports['default'];
+},{"./ease-common":106}],111:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+'use strict';
+var Rx = require('rx');
+
+var _require = require('./ease-common');
+
+var interpolate = _require.interpolate;
+
+var _require2 = require('./ease-powers');
+
+var EasingPower2 = _require2.EasingPower2;
+var EasingPower3 = _require2.EasingPower3;
+var EasingPower4 = _require2.EasingPower4;
+
+var _require3 = require('./ease-exponential');
+
+var EasingExponential = _require3.EasingExponential;
+
+var _require4 = require('./ease-back');
+
+var EasingBack = _require4.EasingBack;
+
+var _require5 = require('./ease-bounce');
+
+var EasingBounce = _require5.EasingBounce;
+
+var _require6 = require('./ease-circ');
+
+var EasingCirc = _require6.EasingCirc;
+
+var _require7 = require('./ease-elastic');
+
+var EasingElastic = _require7.EasingElastic;
+
+var _require8 = require('./ease-sine');
+
+var EasingSine = _require8.EasingSine;
+
+var DEFAULT_INTERVAL = 15;
+function sanitizeInterval(interval) {
+  if (interval === 'auto') {
+    return DEFAULT_INTERVAL;
+  } else if (typeof interval !== 'number' || interval <= 0) {
+    console.warn('RxTween cannot use invalid given interval: ' + interval);
+    return DEFAULT_INTERVAL;
+  }
+  return interval;
+}
+
+function RxTween(_ref) {
+  var from = _ref.from;
+  var to = _ref.to;
+  var duration = _ref.duration;
+  var _ref$ease = _ref.ease;
+  var ease = _ref$ease === undefined ? RxTween.Linear.ease : _ref$ease;
+  var _ref$interval = _ref.interval;
+  var interval = _ref$interval === undefined ? 'auto' : _ref$interval;
+
+  var sanitizedInterval = sanitizeInterval(interval);
+  var totalTicks = Math.round(duration / sanitizedInterval);
+  return Rx.Observable.interval(sanitizedInterval).take(totalTicks).map(function (tick) {
+    return ease(tick / totalTicks, from, to);
+  }).concat(Rx.Observable.just(to));
+}
+
+RxTween.Linear = { ease: interpolate };
+RxTween.Power2 = EasingPower2;
+RxTween.Power3 = EasingPower3;
+RxTween.Power4 = EasingPower4;
+RxTween.Exp = EasingExponential;
+RxTween.Back = EasingBack;
+RxTween.Bounce = EasingBounce;
+RxTween.Circ = EasingCirc;
+RxTween.Elastic = EasingElastic;
+RxTween.Sine = EasingSine;
+
+exports['default'] = RxTween;
+module.exports = exports['default'];
+},{"./ease-back":103,"./ease-bounce":104,"./ease-circ":105,"./ease-common":106,"./ease-elastic":107,"./ease-exponential":108,"./ease-powers":109,"./ease-sine":110,"rx":102}],112:[function(require,module,exports){
+'use strict';
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -22985,7 +23282,7 @@ function classNameFromVNode(vNode) {
 
   return cn.trim();
 }
-},{"./selectorParser":104}],104:[function(require,module,exports){
+},{"./selectorParser":113}],113:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -23043,7 +23340,7 @@ function selectorParser() {
     className: classes.join(' ')
   };
 }
-},{"browser-split":26}],105:[function(require,module,exports){
+},{"browser-split":26}],114:[function(require,module,exports){
 
 // All SVG children elements, not in this list, should self-close
 
@@ -23066,12 +23363,12 @@ module.exports = {
   'metadata': true,
   'title': true
 };
-},{}],106:[function(require,module,exports){
+},{}],115:[function(require,module,exports){
 
 var init = require('./init');
 
 module.exports = init([require('./modules/attributes'), require('./modules/style')]);
-},{"./init":107,"./modules/attributes":108,"./modules/style":109}],107:[function(require,module,exports){
+},{"./init":116,"./modules/attributes":117,"./modules/style":118}],116:[function(require,module,exports){
 
 var parseSelector = require('./parse-selector');
 var VOID_ELEMENTS = require('./void-elements');
@@ -23131,7 +23428,7 @@ module.exports = function init(modules) {
     return tag.join('');
   };
 };
-},{"./container-elements":105,"./parse-selector":110,"./void-elements":111}],108:[function(require,module,exports){
+},{"./container-elements":114,"./parse-selector":119,"./void-elements":120}],117:[function(require,module,exports){
 
 var forOwn = require('lodash.forown');
 var escape = require('lodash.escape');
@@ -23196,7 +23493,7 @@ function setAttributes(values, target) {
     target[key] = value;
   });
 }
-},{"../parse-selector":110,"lodash.escape":91,"lodash.forown":92,"lodash.union":98}],109:[function(require,module,exports){
+},{"../parse-selector":119,"lodash.escape":91,"lodash.forown":92,"lodash.union":98}],118:[function(require,module,exports){
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var forOwn = require('lodash.forown');
@@ -23223,7 +23520,7 @@ module.exports = function style(vnode) {
 
   return styles.length ? 'style="' + styles.join('; ') + '"' : '';
 };
-},{"lodash.escape":91,"lodash.forown":92,"lodash.kebabcase":95}],110:[function(require,module,exports){
+},{"lodash.escape":91,"lodash.forown":92,"lodash.kebabcase":95}],119:[function(require,module,exports){
 
 // https://github.com/Matt-Esch/virtual-dom/blob/master/virtual-hyperscript/parse-tag.js
 
@@ -23270,7 +23567,7 @@ module.exports = function parseSelector(selector, upper) {
     className: classes.join(' ')
   };
 };
-},{"browser-split":26}],111:[function(require,module,exports){
+},{"browser-split":26}],120:[function(require,module,exports){
 
 // http://www.w3.org/html/wg/drafts/html/master/syntax.html#void-elements
 
@@ -23291,7 +23588,7 @@ module.exports = {
   track: true,
   wbr: true
 };
-},{}],112:[function(require,module,exports){
+},{}],121:[function(require,module,exports){
 var VNode = require('./vnode');
 var is = require('./is');
 
@@ -23326,7 +23623,7 @@ module.exports = function h(sel, b, c) {
   return VNode(sel, data, children, text, undefined);
 };
 
-},{"./is":114,"./vnode":123}],113:[function(require,module,exports){
+},{"./is":123,"./vnode":132}],122:[function(require,module,exports){
 function createElement(tagName){
   return document.createElement(tagName);
 }
@@ -23382,13 +23679,13 @@ module.exports = {
   setTextContent: setTextContent
 };
 
-},{}],114:[function(require,module,exports){
+},{}],123:[function(require,module,exports){
 module.exports = {
   array: Array.isArray,
   primitive: function(s) { return typeof s === 'string' || typeof s === 'number'; },
 };
 
-},{}],115:[function(require,module,exports){
+},{}],124:[function(require,module,exports){
 var booleanAttrs = ["allowfullscreen", "async", "autofocus", "autoplay", "checked", "compact", "controls", "declare", 
                 "default", "defaultchecked", "defaultmuted", "defaultselected", "defer", "disabled", "draggable", 
                 "enabled", "formnovalidate", "hidden", "indeterminate", "inert", "ismap", "itemscope", "loop", "multiple", 
@@ -23429,7 +23726,7 @@ function updateAttrs(oldVnode, vnode) {
 
 module.exports = {create: updateAttrs, update: updateAttrs};
 
-},{}],116:[function(require,module,exports){
+},{}],125:[function(require,module,exports){
 function updateClass(oldVnode, vnode) {
   var cur, name, elm = vnode.elm,
       oldClass = oldVnode.data.class || {},
@@ -23449,7 +23746,7 @@ function updateClass(oldVnode, vnode) {
 
 module.exports = {create: updateClass, update: updateClass};
 
-},{}],117:[function(require,module,exports){
+},{}],126:[function(require,module,exports){
 var is = require('../is');
 
 function arrInvoker(arr) {
@@ -23509,7 +23806,7 @@ function updateEventListeners(oldVnode, vnode) {
 
 module.exports = {create: updateEventListeners, update: updateEventListeners};
 
-},{"../is":114}],118:[function(require,module,exports){
+},{"../is":123}],127:[function(require,module,exports){
 var raf = (typeof window !== 'undefined' && window.requestAnimationFrame) || setTimeout;
 var nextFrame = function(fn) { raf(function() { raf(fn); }); };
 
@@ -23663,7 +23960,7 @@ function post() {
 
 module.exports = {pre: pre, create: create, destroy: destroy, post: post};
 
-},{}],119:[function(require,module,exports){
+},{}],128:[function(require,module,exports){
 function updateProps(oldVnode, vnode) {
   var key, cur, old, elm = vnode.elm,
       oldProps = oldVnode.data.props || {}, props = vnode.data.props || {};
@@ -23683,7 +23980,7 @@ function updateProps(oldVnode, vnode) {
 
 module.exports = {create: updateProps, update: updateProps};
 
-},{}],120:[function(require,module,exports){
+},{}],129:[function(require,module,exports){
 var raf = (typeof window !== 'undefined' && window.requestAnimationFrame) || setTimeout;
 var nextFrame = function(fn) { raf(function() { raf(fn); }); };
 
@@ -23749,7 +24046,7 @@ function applyRemoveStyle(vnode, rm) {
 
 module.exports = {create: updateStyle, update: updateStyle, destroy: applyDestroyStyle, remove: applyRemoveStyle};
 
-},{}],121:[function(require,module,exports){
+},{}],130:[function(require,module,exports){
 // jshint newcap: false
 /* global require, module, document, Node */
 'use strict';
@@ -24009,7 +24306,7 @@ function init(modules, api) {
 
 module.exports = {init: init};
 
-},{"./htmldomapi":113,"./is":114,"./vnode":123}],122:[function(require,module,exports){
+},{"./htmldomapi":122,"./is":123,"./vnode":132}],131:[function(require,module,exports){
 var h = require('./h');
 
 function copyToThunk(vnode, thunk) {
@@ -24057,17 +24354,17 @@ module.exports = function(sel, key, fn, args) {
   });
 };
 
-},{"./h":112}],123:[function(require,module,exports){
+},{"./h":121}],132:[function(require,module,exports){
 module.exports = function(sel, data, children, text, elm) {
   var key = data === undefined ? undefined : data.key;
   return {sel: sel, data: data, children: children,
           text: text, elm: elm, key: key};
 };
 
-},{}],124:[function(require,module,exports){
+},{}],133:[function(require,module,exports){
 module.exports = require('./lib/index');
 
-},{"./lib/index":125}],125:[function(require,module,exports){
+},{"./lib/index":134}],134:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -24092,7 +24389,7 @@ if (typeof global !== 'undefined') {
 var result = (0, _ponyfill2['default'])(root);
 exports['default'] = result;
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./ponyfill":126}],126:[function(require,module,exports){
+},{"./ponyfill":135}],135:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24116,7 +24413,7 @@ function symbolObservablePonyfill(root) {
 
 	return result;
 };
-},{}],127:[function(require,module,exports){
+},{}],136:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -25977,7 +26274,7 @@ exports.MemoryStream = MemoryStream;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = Stream;
 
-},{"symbol-observable":124}],128:[function(require,module,exports){
+},{"symbol-observable":133}],137:[function(require,module,exports){
 "use strict";
 var core_1 = require('./core');
 exports.Stream = core_1.Stream;
@@ -25985,7 +26282,7 @@ exports.MemoryStream = core_1.MemoryStream;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = core_1.Stream;
 
-},{"./core":127}],129:[function(require,module,exports){
+},{"./core":136}],138:[function(require,module,exports){
 'use strict';
 
 var _rx = require('rx');
@@ -26064,7 +26361,7 @@ function diagramCompletionComponent(_ref) {
 
 module.exports = diagramCompletionComponent;
 
-},{"../styles/utils":153,"@cycle/dom":13,"rx":102}],130:[function(require,module,exports){
+},{"../styles/utils":162,"@cycle/dom":13,"rx":102}],139:[function(require,module,exports){
 'use strict';
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -26140,7 +26437,7 @@ function diagramIntent(_ref3) {
 
 module.exports = diagramIntent;
 
-},{"immutable":80,"rx":102}],131:[function(require,module,exports){
+},{"immutable":80,"rx":102}],140:[function(require,module,exports){
 'use strict';
 
 var _rx = require('rx');
@@ -26230,8 +26527,10 @@ function diagramModel(props, intent) {
 
 module.exports = diagramModel;
 
-},{"rx":102}],132:[function(require,module,exports){
+},{"rx":102}],141:[function(require,module,exports){
 'use strict';
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 
 var _rx = require('rx');
 
@@ -26250,6 +26549,10 @@ var _dimens2 = _interopRequireDefault(_dimens);
 var _fonts = require('../../styles/fonts');
 
 var _fonts2 = _interopRequireDefault(_fonts);
+
+var _rxtween = require('rxtween');
+
+var _rxtween2 = _interopRequireDefault(_rxtween);
 
 var _utils = require('../../styles/utils');
 
@@ -26272,8 +26575,6 @@ var _rxCollection2 = _interopRequireDefault(_rxCollection);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _rxDebug2.default)();
-// import RxTween from 'rxtween';
-
 (0, _rxCollection2.default)();
 
 var MARBLE_WIDTH = 5; // estimate of a marble width, in percentages
@@ -26369,8 +26670,6 @@ function renderDiagramArrowHead() {
 }
 
 function renderDiagram(DOM, data$, isInteractive$, props) {
-  // TODO optimize here to create a single Marble and maintain it, updating state,
-  // just like D3 has Enter, Leave and Change events. Build it using GroupBy?
   var nots = data$.map(function (d) {
     return d.get('notifications').toJS();
   });
@@ -26431,36 +26730,40 @@ function interpolate(from, to, x) {
 }
 
 function animateData$(data$) {
-  return data$;
-  // const animConf = {
-  //   from: 0,
-  //   to: 1,
-  //   ease: RxTween.Power3.easeOut,
-  //   duration: 600
-  // };
-  // return data$.flatMapLatest(data => {
-  //   if (!data.get('isFirst')) {
-  //     return Rx.Observable.just(data);
-  //   } else {
-  //     let randomizedNotifs = data.get('notifications').map(notif =>
-  //       notif.update('time', time =>
-  //         time - 10 + 20 * Math.random()
-  //       )
-  //     );
+  var animConf = {
+    from: 0,
+    to: 1,
+    ease: _rxtween2.default.Power3.easeOut,
+    duration: 600
+  };
+  return data$.flatMapLatest(function (data) {
+    if (!data.get('isFirst')) {
+      return _rx2.default.Observable.just(data);
+    } else {
+      var _ret = function () {
+        var randomizedNotifs = data.get('notifications').map(function (notif) {
+          return notif.update('time', function (time) {
+            return time - 10 + 20 * Math.random();
+          });
+        });
 
-  //     return RxTween(animConf).map(x =>
-  //       data.update('notifications', notifications =>
-  //         notifications.zipWith((n1, n2) =>
-  //           n1.update('time', t1 => {
-  //             let t2 = n2.get('time');
-  //             return interpolate(t2, t1, x);
-  //           }),
-  //           randomizedNotifs
-  //         )
-  //       )
-  //     );
-  //   }
-  // })
+        return {
+          v: (0, _rxtween2.default)(animConf).map(function (x) {
+            return data.update('notifications', function (notifications) {
+              return notifications.zipWith(function (n1, n2) {
+                return n1.update('time', function (t1) {
+                  var t2 = n2.get('time');
+                  return interpolate(t2, t1, x);
+                });
+              }, randomizedNotifs);
+            });
+          })
+        };
+      }();
+
+      if ((typeof _ret === 'undefined' ? 'undefined' : _typeof(_ret)) === "object") return _ret.v;
+    }
+  });
 }
 
 function diagramView(_ref2) {
@@ -26476,7 +26779,7 @@ function diagramView(_ref2) {
 
 module.exports = diagramView;
 
-},{"../../rx-collection":148,"../../rx-debug":149,"../../styles/colors":150,"../../styles/dimens":151,"../../styles/fonts":152,"../../styles/utils":153,"../diagram-completion":129,"../marble":134,"@cycle/dom":13,"rx":102}],133:[function(require,module,exports){
+},{"../../rx-collection":157,"../../rx-debug":158,"../../styles/colors":159,"../../styles/dimens":160,"../../styles/fonts":161,"../../styles/utils":162,"../diagram-completion":138,"../marble":143,"@cycle/dom":13,"rx":102,"rxtween":111}],142:[function(require,module,exports){
 'use strict';
 
 var _rx = require('rx');
@@ -26525,7 +26828,7 @@ module.exports = function (sources) {
   return (0, _isolate2.default)(DiagramComponent)(sources);
 };
 
-},{"./diagram-intent":130,"./diagram-model":131,"./diagram-view":132,"@cycle/isolate":22,"rx":102}],134:[function(require,module,exports){
+},{"./diagram-intent":139,"./diagram-model":140,"./diagram-view":141,"@cycle/isolate":22,"rx":102}],143:[function(require,module,exports){
 'use strict';
 
 var _rx = require('rx');
@@ -26596,7 +26899,6 @@ function renderInnerContent(data, inputStyle) {
 }
 
 function render(data, isDraggable, inputStyle, isHighlighted) {
-  // console.log("rendering marble", data.diagramId, data.time);
   var draggableContainerStyle = {
     cursor: 'ew-resize'
   };
@@ -26611,7 +26913,6 @@ function render(data, isDraggable, inputStyle, isHighlighted) {
 }
 
 function renderThunk(data, isDraggable, style, isHighlighted) {
-  // console.log('data for marble', data.id, data.time)
   return (0, _dom.thunk)('marble', data.id, render, [data, isDraggable, style, isHighlighted]);
 }
 
@@ -26656,7 +26957,7 @@ module.exports = function (sources) {
   return (0, _isolate2.default)(marbleComponent)(sources);
 };
 
-},{"../styles/colors":150,"../styles/utils":153,"@cycle/dom":13,"@cycle/isolate":22,"rx":102}],135:[function(require,module,exports){
+},{"../styles/colors":159,"../styles/utils":162,"@cycle/dom":13,"@cycle/isolate":22,"rx":102}],144:[function(require,module,exports){
 'use strict';
 
 var _rx = require('rx');
@@ -26732,7 +27033,7 @@ module.exports = {
   makeNewInputDiagramsData$: makeNewInputDiagramsData$
 };
 
-},{"./utils":138,"immutable":80,"rx":102}],136:[function(require,module,exports){
+},{"./utils":147,"immutable":80,"rx":102}],145:[function(require,module,exports){
 'use strict';
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; }; /*
@@ -26850,7 +27151,7 @@ module.exports = {
   getOutputDiagram$: getOutputDiagram$
 };
 
-},{"./utils":138,"immutable":80,"rx":102}],137:[function(require,module,exports){
+},{"./utils":147,"immutable":80,"rx":102}],146:[function(require,module,exports){
 'use strict';
 
 var _rx = require('rx');
@@ -27024,7 +27325,7 @@ function sandboxComponent(_ref) {
 
 module.exports = sandboxComponent;
 
-},{"../../data/examples":142,"../../styles/colors":150,"../../styles/dimens":151,"../../styles/fonts":152,"../../styles/utils":153,"../diagram/diagram":133,"./sandbox-input":135,"./sandbox-output":136,"@cycle/dom":13,"@cycle/isolate":22,"immutable":80,"rx":102}],138:[function(require,module,exports){
+},{"../../data/examples":151,"../../styles/colors":159,"../../styles/dimens":160,"../../styles/fonts":161,"../../styles/utils":162,"../diagram/diagram":142,"./sandbox-input":144,"./sandbox-output":145,"@cycle/dom":13,"@cycle/isolate":22,"immutable":80,"rx":102}],147:[function(require,module,exports){
 "use strict";
 
 /*
@@ -27062,7 +27363,7 @@ module.exports = {
   calculateNotificationContentHash: calculateNotificationContentHash
 };
 
-},{}],139:[function(require,module,exports){
+},{}],148:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27117,7 +27418,7 @@ exports.default = {
   }
 };
 
-},{"rx":102}],140:[function(require,module,exports){
+},{"rx":102}],149:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27194,7 +27495,7 @@ exports.default = {
   }
 };
 
-},{"rx":102}],141:[function(require,module,exports){
+},{"rx":102}],150:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27217,7 +27518,7 @@ exports.default = {
   }
 };
 
-},{"rx":102}],142:[function(require,module,exports){
+},{"rx":102}],151:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -27276,7 +27577,7 @@ function applyCategory(examples, categoryName) {
 
 exports.default = merge(applyCategory(_transformExamples2.default, "Transforming Operators"), applyCategory(_combineExamples2.default, "Combining Operators"), applyCategory(_filterExamples2.default, "Filtering Operators"), applyCategory(_mathExamples2.default, "Mathematical Operators"), applyCategory(_booleanExamples2.default, "Boolean Operators"), applyCategory(_conditionalExamples2.default, "Conditional Operators"));
 
-},{"./boolean-examples":139,"./combine-examples":140,"./conditional-examples":141,"./filter-examples":143,"./math-examples":144,"./transform-examples":145}],143:[function(require,module,exports){
+},{"./boolean-examples":148,"./combine-examples":149,"./conditional-examples":150,"./filter-examples":152,"./math-examples":153,"./transform-examples":154}],152:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27433,7 +27734,7 @@ exports.default = {
   }
 };
 
-},{"rx":102}],144:[function(require,module,exports){
+},{"rx":102}],153:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27531,7 +27832,7 @@ exports.default = {
   }
 };
 
-},{"rx":102}],145:[function(require,module,exports){
+},{"rx":102}],154:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27546,18 +27847,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
   "delay": {
-    "label": "delay",
+    "label": "delay(20)",
     "inputs": [[{ t: 0, d: 1 }, { t: 10, d: 2 }, { t: 20, d: 1 }]],
     "apply": function apply(inputs, scheduler) {
       return inputs[0].delay(20, scheduler);
     }
   },
 
-  "delayWithSelector": {
-    "label": "delayWithSelector(x => Rx.Observable.timer(20 * x))",
+  "delay with selector": {
+    "label": "delay(x => Rx.Observable.timer(20 * x))",
     "inputs": [[{ t: 0, d: 1 }, { t: 10, d: 2 }, { t: 20, d: 1 }]],
     "apply": function apply(inputs, scheduler) {
-      return inputs[0].delayWithSelector(function (x) {
+      return inputs[0].delay(function (x) {
         return _rx2.default.Observable.timer(Number(x.get('content')) * 20, 1000, scheduler);
       });
     }
@@ -27601,18 +27902,18 @@ exports.default = {
     }
   },
 
-  "debounceWithSelector": {
-    "label": "debounceWithSelector(x => Rx.Observable.timer(10 * x))",
+  "debounce with selector": {
+    "label": "debounce(x => Rx.Observable.timer(10 * x))",
     "inputs": [[{ t: 0, d: 1 }, { t: 26, d: 2 }, { t: 34, d: 1 }, { t: 40, d: 1 }, { t: 45, d: 2 }, { t: 79, d: 1 }]],
     "apply": function apply(inputs, scheduler) {
-      return inputs[0].debounceWithSelector(function (x) {
+      return inputs[0].debounce(function (x) {
         return _rx2.default.Observable.timer(Number(x.get('content')) * 10, 1000, scheduler);
       });
     }
   }
 };
 
-},{"rx":102}],146:[function(require,module,exports){
+},{"rx":102}],155:[function(require,module,exports){
 'use strict';
 
 var _rxRun = require('@cycle/rx-run');
@@ -27653,7 +27954,7 @@ var XRxMarbles = document.registerElement('rx-marbles', {
   prototype: SandboxPrototype
 });
 
-},{"./lib":147,"@cycle/dom":13,"@cycle/rx-run":24,"rx":102}],147:[function(require,module,exports){
+},{"./lib":156,"@cycle/dom":13,"@cycle/rx-run":24,"rx":102}],156:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -27684,7 +27985,7 @@ exports.DiagramCompletionComponent = _diagramCompletion2.default;
 exports.MarbleComponent = _marble2.default;
 exports.SandboxComponent = _sandbox2.default;
 
-},{"./components/diagram-completion":129,"./components/diagram/diagram":133,"./components/marble":134,"./components/sandbox/sandbox":137}],148:[function(require,module,exports){
+},{"./components/diagram-completion":138,"./components/diagram/diagram":142,"./components/marble":143,"./components/sandbox/sandbox":146}],157:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -27788,7 +28089,7 @@ var Observable = _rx2.default.Observable,
 
 ;
 
-},{"rx":102}],149:[function(require,module,exports){
+},{"rx":102}],158:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -27864,7 +28165,7 @@ var DebugObserver = function (__super__) {
 
 ;
 
-},{"rx":102}],150:[function(require,module,exports){
+},{"rx":102}],159:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -27883,7 +28184,7 @@ exports.default = {
   green: '#82D736'
 };
 
-},{}],151:[function(require,module,exports){
+},{}],160:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -27901,7 +28202,7 @@ exports.default = {
   animationDurationSlow: '400ms'
 };
 
-},{}],152:[function(require,module,exports){
+},{}],161:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27913,7 +28214,7 @@ exports.default = {
   fontCode: "'Source Code Pro', monospace"
 };
 
-},{}],153:[function(require,module,exports){
+},{}],162:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -28010,4 +28311,4 @@ exports.marbleElevation1Style = marbleElevation1Style;
 exports.renderSvgDropshadow = renderSvgDropshadow;
 exports.textUnselectable = textUnselectable;
 
-},{"@cycle/dom":13,"immutable":80}]},{},[146]);
+},{"@cycle/dom":13,"immutable":80}]},{},[155]);
