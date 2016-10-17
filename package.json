@@ -9,15 +9,17 @@
   "license": "BSD 3-Clause",
   "private": true,
   "main": "dist/js/lib.js",
+  "types": [],
+  "typings": "dist/js/lib.d.ts",
   "dependencies": {
-    "@cycle/dom": "12.2.5",
+    "@cycle/dom": "^12.2.5",
     "@cycle/isolate": "^1.4.0",
     "@cycle/rx-run": "7.0.1",
     "immutable": "^3.7.2",
     "rx": "^4.1.0",
     "rx-dom": "^7.0.3",
     "rxtween": "^1.0.0",
-    "xstream": "^6.3.2"
+    "xstream": "^6.4.1"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",
@@ -25,6 +27,7 @@
     "babelify": "^7.2.0",
     "browserify": "^11.0.1",
     "chalk": "^1.1.3",
+    "derequire": "^2.0.3",
     "gulp": "^3.9.1",
     "gulp-livereload": "^3.8.1",
     "gulp-rename": "^1.2.2",
@@ -42,7 +45,8 @@
   },
   "scripts": {
     "less": "lessc styles/main.less dist/css/main.css",
-    "browserify": "for file in {app,element,lib}; do browserify src/$file.js -t babelify --outfile dist/js/$file.js; done",
+    "lib": "browserify src/lib.js --standalone rxmarbles -t babelify",
+    "browserify": "for file in {app,element}; do browserify src/$file.js -t babelify --outfile dist/js/$file.js; done",
     "build": "npm run write-versions && npm run less && npm run browserify",
     "build-production": "npm run write-versions && npm run less && npm run browserify && npm run uglify",
     "uglify": "for file in {app,element,lib}; do uglifyjs dist/js/$file.js -o dist/js/$file.js; done",

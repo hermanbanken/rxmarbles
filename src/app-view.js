@@ -4,12 +4,7 @@ import Dimens from '~styles/dimens';
 import Fonts from '~styles/fonts';
 import Rx from 'rx';
 import {mergeStyles, renderSvgDropshadow} from '~styles/utils';
-import {
-  SandboxComponent,
-  DiagramComponent,
-  MarbleComponent,
-  DiagramCompletionComponent 
-} from './lib';
+import SandboxComponent from '~components/sandbox/sandbox';
 import MenuComponent from '~components/operators-menu';
 
 import debugHook from '~rx-debug';

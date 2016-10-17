@@ -1,9 +1,12 @@
 import Rx from 'rx';
 
-var Observable = Rx.Observable,
+export default function(rxLibrary){
+  if(typeof rxLibrary == 'undefined') {
+    rxLibrary = Rx;
+  }
+  var Observable = rxLibrary.Observable,
   observableProto = Observable.prototype;
 
-export default function(){
   observableProto.collection = function(config) {
     let root = this.share(), merge = [], latest = [];
     
