@@ -42,7 +42,7 @@
   },
   "scripts": {
     "less": "lessc styles/main.less dist/css/main.css",
-    "browserify": "for file in {app,element,lib}; do browserify src/$file.js -t babelify --outfile dist/js/$file.js; done",
+    "browserify": "for file in app element lib; do browserify src/$file.js -t babelify --outfile dist/js/$file.js; done",
     "build": "npm run write-versions && npm run less && npm run browserify",
     "build-production": "npm run write-versions && npm run less && npm run browserify && npm run uglify",
     "uglify": "for file in {app,element,lib}; do uglifyjs dist/js/$file.js -o dist/js/$file.js; done",
